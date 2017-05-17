@@ -4,8 +4,6 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
-// var nodeModulesPath = path.resolve(__dirname, 'node_modules')
-// console.log(process.env.NODE_ENV)
 
 module.exports = {
     entry: path.resolve(__dirname, 'app/index.jsx'),
@@ -19,10 +17,6 @@ module.exports = {
     },
 
     module: {
-        // preLoaders: [
-        //     // 报错 ？？？？？
-        //     {test: /\.(js|jsx)$/, loader: "eslint-loader", exclude: /node_modules/}
-        // ],
         loaders: [
             { test: /\.(js|jsx)$/, exclude: /node_modules/, loader: 'babel' },
             { test: /\.less$/, exclude: /node_modules/, loader: 'style!css!postcss!less' },
