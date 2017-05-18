@@ -1,9 +1,10 @@
 import React from 'react';
-import HomeHeader from '../../components/HomeHeader';
 import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 
+import HomeHeader from '../../components/HomeHeader';
+import Carousel from '../../components/Category/index.jsx';
 class Home extends React.Component {
   constructor(props, context) {
         super(props, context);
@@ -13,6 +14,7 @@ class Home extends React.Component {
     return(
       <div>
         <HomeHeader cityName={this.props.userinfo.cityName} />
+        <Carousel />
       </div>
     )
   }
