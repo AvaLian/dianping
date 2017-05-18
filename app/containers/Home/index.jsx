@@ -5,6 +5,8 @@ import PureRenderMixin from 'react-addons-pure-render-mixin';
 
 import HomeHeader from '../../components/HomeHeader';
 import Category from '../../components/Category';
+import Ad from '../../containers/Home/subpage/Ad.jsx';
+
 class Home extends React.Component {
   constructor(props, context) {
         super(props, context);
@@ -15,6 +17,7 @@ class Home extends React.Component {
       <div>
         <HomeHeader cityName={this.props.userinfo.cityName} />
         <Category />
+        <Ad />
       </div>
     )
   }
