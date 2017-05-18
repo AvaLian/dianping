@@ -18,7 +18,7 @@ router.get('/api/homelist/:city/:page', function *(next) {
     console.log('当前城市：' + paramsCity)
     console.log('当前页数：' + paramsPage)
 
-    this.body = homeListData
+    this.body = homeListData;
 });
 
 
