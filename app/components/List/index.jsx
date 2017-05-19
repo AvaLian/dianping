@@ -1,5 +1,6 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
+import Item from './Item';
 
 import './style.less';
 
@@ -13,11 +14,11 @@ class ListComponent extends React.Component {
     const data = this.props.data;
 
     return(
-      //对数据进行遍历，并且展示数据
+      //对数据进行遍历，用 Item 组件展示数据
       <div>
         {
           data.map((item, index) => {
-          return <p key={index}>{item.title}</p>
+          return <Item key={index} data={item}/>
         })
         }
       </div>
