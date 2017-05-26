@@ -1,5 +1,6 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
+import Star from '../Star';
 import './style.less';
 
 class DetailInfo extends React.Component {
@@ -19,6 +20,7 @@ class DetailInfo extends React.Component {
           <div className="info-content">
             <h1>{data.title}</h1>
             <div className="star-container">
+              <Star star={data.star} />
               <span className="price">￥{data.price}</span>
             </div>
             <p className="sub-title">{data.subTitle}</p>

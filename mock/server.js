@@ -75,7 +75,6 @@ router.get('/api/detail/info/:id', function *(next) {
     console.log('详情页 - 商户信息')
 
     const params = this.params
-    console.log(params)
     const id = params.id
 
     console.log('商户id: ' + id)
