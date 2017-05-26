@@ -10,7 +10,7 @@ class Search extends React.Component {
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
     render() {
-        const params = this.props.params
+        const params = this.props.params;
         return (
             <div>
                 <SearchHeader keyword={params.keyword} />
