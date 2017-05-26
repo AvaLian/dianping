@@ -10,17 +10,12 @@ class ListComponent extends React.Component {
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate;
   }
   render(){
-    //取出 data
-    const data = this.props.data;
-
     return(
       //对数据进行遍历，用 Item 组件展示数据
-      <div>
-        {
-          data.map((item, index) => {
+      <div className="list-container">
+        {this.props.data.map((item, index) => {
           return <Item key={index} data={item}/>
-        })
-        }
+        })}
       </div>
     )
   }
