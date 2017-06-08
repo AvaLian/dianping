@@ -1,16 +1,20 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
+import "./style.less";
 
-class NotFound extends React.Component {
+class CurrentCity extends React.Component {
   constructor(props, context) {
       super(props, context);
       this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
     render() {
         return (
-            <h1>404 not found page</h1>
+          <div className="current-city">
+            <h2>{this.props.cityName}</h2>
+          </div>
         )
     }
+
 }
 
-export default NotFound;
+export default CurrentCity;
