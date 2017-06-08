@@ -9,7 +9,7 @@ module.exports = {
       distance: '120m',
       mumber: '389',
       id: Math.random().toString().slice(2)
-      },
+    },
     {
       img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161022145750123-1745839503.jpg',
       title: '漫漫火锅',
