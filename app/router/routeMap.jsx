@@ -9,6 +9,7 @@ import User from '../containers/User';
 import Search from '../containers/Search';
 import Detail from '../containers/Detail';
 import NotFound from '../containers/404';
+import Login from '../containers/Login';
 
 class RouterMap extends React.Component {
   render() {
